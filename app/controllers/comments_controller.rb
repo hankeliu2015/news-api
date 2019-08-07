@@ -15,6 +15,7 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
+    # binding.pry
     @comment = Comment.new(comment_params)
 
     if @comment.save
