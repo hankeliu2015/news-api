@@ -14,6 +14,10 @@
 # Comment.create(story_id: "123456", story_comment: "Good article", story_score: 8, user_id: 2)
 # Comment.create(story_id: "123456", story_comment: "Not recommend", story_score: 3, user_id: 3)
 
-Author.create(name: "Henry")
-Author.create(name: "Hank")
-Author.create(name: "Harry")
+# Author.create(name: "Henry")
+# Author.create(name: "Hank")
+# Author.create(name: "Harry")
+
+Story.create(author_id: 1, content: "Author 1 first story")
+Story.create(author_id: 2, content: "Author 2 first story")
+Story.create(author_id: 3, content: "Author 3 first story")
