@@ -15,6 +15,10 @@ class StoriesController < ApplicationController
 
   # POST /stories
   def create
+
+    # binding.pry
+    # @author = Author.create(author_name: story_params.author_name)
+    # @story = Story.build_author(story_params.story_content)
     @story = Story.new(story_params)
 
     if @story.save
@@ -46,6 +50,6 @@ class StoriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def story_params
-      params.require(:story).permit(:comment, :score, :story_id, :image, :resume)
+      params.require(:story).permit(:author_id, :story_content, :image)
     end
 end
