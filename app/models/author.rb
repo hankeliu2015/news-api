@@ -1,3 +1,3 @@
 class Author < ApplicationRecord
-	has_many: stories
+	has_many :stories
 end
