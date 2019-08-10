@@ -16,10 +16,10 @@ class StoriesController < ApplicationController
   # POST /stories
   def create
 
-    # binding.pry
-    # @author = Author.create(author_name: story_params.author_name)
-    # @story = Story.build_author(story_params.story_content)
+    @author = Author.create(author_name: params['author_name'])
+    # @story = Story.build_author(story_params)
     @story = Story.new(story_params)
+    @story.author = @author
 
     if @story.save
       render json: @story, status: :created, location: @story
