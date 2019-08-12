@@ -22,6 +22,6 @@
 # Story.create(author_id: 2, content: "Author 2 first story")
 # Story.create(author_id: 3, content: "Author 3 first story")
 
-Story.create(author_id: 1, story_content: "Author 1 2nd story")
-Story.create(author_id: 2, story_content: "Author 2 2nd story")
-Story.create(author_id: 3, story_content: "Author 3 2nd story")
+# Story.create(author_id: 1, story_content: "Author 1 2nd story")
+# Story.create(author_id: 2, story_content: "Author 2 2nd story")
+# Story.create(author_id: 3, story_content: "Author 3 2nd story")
